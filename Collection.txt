@@ -1,0 +1,15 @@
+|tab|
+tab := #(1 2 3 -44 0 5 6 4 5 -3 22 1 2 5).
+
+"Q1 : Donnez l’expression qui rend la liste des nombres positifs"
+tab abs.
+
+"Q2 : Donnez l’expression qui rend la liste des carrés des nombres"
+tab squared.
+
+"Q3 : Donnez l’expression qui rend la somme des nombres"
+tab sum.
+
+"Q4 : Donnez l’expression qui rend le premier nombre négatif"
+tab at:1 put: ((tab at:1) negated).
+tab. "Affiche la table"
