@@ -7,9 +7,22 @@ Class {
 	#category : #Dice
 }
 
+{ #category : #'as yet unclassified' }
+Die class >> withFaces: anInteger [
+	|d|
+	d := Die new.
+	d faces: anInteger.
+	^ d
+]
+
 { #category : #accessing }
 Die >> faces [
 	^ faces
+]
+
+{ #category : #accessor }
+Die >> faces: anInteger [ 
+	faces := anInteger
 ]
 
 { #category : #initialization }
